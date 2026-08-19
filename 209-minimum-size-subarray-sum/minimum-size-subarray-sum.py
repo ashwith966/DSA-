@@ -7,7 +7,8 @@ class Solution:
             sum+=nums[i]
 
             while sum>=target:
-                answer = min(answer,len(nums[j:i])+1)
+                if i-j+1<answer:
+                    answer = i-j+1
                 sum-=nums[j]
                 j+=1
         if answer == float('inf'):

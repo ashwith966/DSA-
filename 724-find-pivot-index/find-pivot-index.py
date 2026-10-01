@@ -8,5 +8,5 @@ class Solution:
             if leftsum==rightsum:
                 return i
             leftsum+=nums[i]
-        
+
         return -1
